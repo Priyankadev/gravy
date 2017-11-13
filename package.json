@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --hot"
   },
   "author": "",
   "license": "ISC",
@@ -16,5 +16,8 @@
     "react": "^16.1.0",
     "react-dom": "^16.1.0",
     "webpack": "^3.8.1"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^2.9.4"
   }
 }
