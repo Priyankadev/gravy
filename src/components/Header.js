@@ -1,12 +1,11 @@
 import React from 'react';
 
-class App extends React.Component {
+export default class Header extends React.Component {
    render() {
       return (
          <div>
-            Gravy is delicious!!!
+            <h1>Header</h1>
          </div>
       );
    }
-}
-export default App;
+}//Header
