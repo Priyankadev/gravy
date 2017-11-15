@@ -9,7 +9,7 @@ export default class App extends React.Component {
    render() {
       return (
          <div>
-            <Header />
+            <Header headerValue="Gravy Project"/>
             <Content />
             <Footer />
          </div>
