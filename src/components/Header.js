@@ -6,13 +6,19 @@ export default class Header extends React.Component {
       super(props);
       
       this.state = {
-         data: 'Initial data...'
+         data: 'Initial data...',
+         name: 'Angel'
       }
       this.updateState = this.updateState.bind(this);
+      this.updateName  = this.updateName.bind(this);
    	};
 
    	updateState() {
       this.setState({data: 'Data updated...'})
+  	};
+
+  	updateName(e) {
+      this.setState({name: e.target.value})
   	};
 
   	componentWillMount() {
@@ -50,6 +56,9 @@ export default class Header extends React.Component {
             {console.log ("[INFO] rendering header")}
             <button onClick = {this.updateState}>CLICK</button>
             <h4>{this.state.data}</h4>
+            Name: <input type = "text" value = {this.state.name} 
+               onChange = {this.updateName} />
+            <h4>{this.state.name}</h4>
          </div>
       );
    }
